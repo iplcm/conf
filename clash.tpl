@@ -67,18 +67,18 @@ proxies:
 
 proxy-groups:
 {$ProxyGroups}
-{if $user->class > 0}
-# 网易云节点下线取消展示此规则
-# -
-#   name: NeteaseUnlocker
-#   type: select
-#   proxies:
-#     - PROXY
-#     - DIRECT
-# {for $i=0; $i<count($Proxys); $i++}{if strrpos($Proxys[$i]['name'], "网易云") !== false}    - '{$Proxys[$i]['name']}'
-#
+{* {if $user->class > 0}
+网易云节点下线取消展示此规则
+-
+  name: NeteaseUnlocker
+  type: select
+  proxies:
+    - PROXY
+    - DIRECT
+{for $i=0; $i<count($Proxys); $i++}{if strrpos($Proxys[$i]['name'], "网易云") !== false}    - '{$Proxys[$i]['name']}'
+
 {/if}{/for}
-{/if}
+{/if} *}
 
 # proxymode = China 时为回国代理模式
 

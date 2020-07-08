@@ -47,11 +47,6 @@ Direct = direct
 
 [Proxy Group]
 {$ProxyGroups}
-{* {if $user->class > 0}
-🇨🇳 BackChina = select, 🚀 Direct, 🍂 Domestic, 🍃 Proxy {for $i=0; $i<count($items); $i++}{if strrpos($items[$i]['remark'], "回国") !== false}, {$items[$i]['remark']}{/if}{/for}
-
-🎵 NeteaseUnlocker = select, 🍃 Proxy, 🚀 Direct {for $i=0; $i<count($items); $i++}{if strrpos($items[$i]['remark'], "网易云") !== false}, {$items[$i]['remark']}{/if}{/for}
-{/if} *}
 
 [Rule]
 
